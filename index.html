@@ -10,8 +10,16 @@
   <div class="container">
     <h1>Учёт автомобилей</h1>
     <form id="car-form">
-      <label for="reg-number">Гос. номер автомобиля:</label>
-      <input type="text" id="reg-number" placeholder="Введите номер авто" required>
+      <label>
+        Тип идентификатора:
+        <select id="identifier-type">
+          <option value="reg">Гос. номер</option>
+          <option value="vin">ВИН (последние 4 цифры)</option>
+        </select>
+      </label>
+
+      <label for="identifier-input">Введите идентификатор:</label>
+      <input type="text" id="identifier-input" placeholder="Введите номер авто или ВИН" required>
       
       <label for="hours">Нормо-часы:</label>
       <input type="number" id="hours" min="0" step="0.1" placeholder="Введите нормо-часы" required>
@@ -25,7 +33,7 @@
       <table id="car-table" class="table-editable">
         <thead>
           <tr>
-            <th>Гос. номер</th>
+            <th>Идентификатор</th>
             <th>Дата</th>
             <th>Нормо-часы</th>
             <th>Общие часы (авто)</th>
@@ -51,8 +59,7 @@
       </ul>
     </div>
   </div>
-
-  <!-- Добавляем контейнер для уведомлений -->
+  
   <div id="notifications-container"></div>
   
   <script src="script.js"></script>

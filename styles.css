@@ -127,3 +127,12 @@ button.delete:hover {
   background-color: #fff;
   outline: none;
 }
+
+/* Стиль для нового выпадающего списка */
+select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
