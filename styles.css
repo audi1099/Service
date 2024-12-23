@@ -74,13 +74,13 @@ tr:nth-child(even) {
 
 #saved-hours-list button {
   margin-left: 10px;
-  background: yellow;
+  background: red;
 }
 
 #saved-hours-list button:hover {
-  background: yellow;
+  background: red;
 }
 
 button.delete  {
-    background-color: yellow;
+    background-color: red;
 }
